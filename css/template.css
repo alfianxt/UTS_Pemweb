@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Header */
+.header {
+    padding: 10px;
+    text-align: center;
+    background: white;
+}
+.header h1 {
+    font-size: 30px;
+}
+
+/* Top Nav */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    padding: 10px 16px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Pages */
+.pages:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 25%;
+    padding-right: 20px;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 75%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 3px;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 3px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    margin-top: 20px;
+    color: #ddd;
+}
+
+/* card effect */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    text-align: center;
+    padding: 8px;
+}
+td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+th {
+    background-color: #333;
+    color: white;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=text], input[type=date] , select, textarea {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    margin-left: 3px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+input[type=reset]:hover {
+background-color: #35bfd1;
+}
+
+input[type=reset] {
+    background-color: rgb(70, 150, 204);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
